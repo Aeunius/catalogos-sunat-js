@@ -1,11 +1,16 @@
 name: publicar
 
-# Publica en npm al subir una etiqueta vX.Y.Z, con provenance: npm muestra que
-# el paquete se construyó aquí, desde ese commit.
+# Publica en npm al crear un release en GitHub. El tag tiene que coincidir con
+# la versión de package.json (v1.0.0 ↔ 1.0.0).
+#
+# Se autentica con publicación confiable (OIDC), configurada en npmjs.com para
+# este repo, este workflow y el environment npm: no hay tokens. El paquete sale
+# con provenance. La primera versión se publica a mano con make publicar,
+# porque la publicación confiable solo se configura en paquetes que ya existen.
 
 on:
-  push:
-    tags: ['v*']
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -15,6 +20,7 @@ jobs:
   npm:
     runs-on: ubuntu-latest
     environment: npm
+
     steps:
       - uses: actions/checkout@v7
 
@@ -24,13 +30,17 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: npm
 
-      - name: La etiqueta coincide con package.json
-        run: test "${GITHUB_REF_NAME}" = "v$(node -p "require('./package.json').version")"
+      - name: El tag coincide con package.json
+        run: |
+          version="$(node -p 'require("./package.json").version')"
+          if [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "::error::El tag ${GITHUB_REF_NAME} no coincide con la versión ${version} de package.json"
+            exit 1
+          fi
 
       - run: npm ci
+      - run: npm run typecheck
+      - run: npx biome ci
       - run: npm test
 
-      # Con trusted publishing configurado en npm no hace falta NPM_TOKEN.
       - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

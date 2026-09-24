@@ -10,7 +10,7 @@ RUN    = docker run --rm -i $(TTY) -u $$(id -u):$$(id -g) \
          -e npm_config_cache=/tmp/cache -e npm_config_update_notifier=false \
          -w /app node:24
 
-.PHONY: help install test typecheck lint format build datos npm shell
+.PHONY: help install test typecheck lint format build datos publicar npm shell
 
 help:           ## Lista los comandos
 	@grep -hE '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -38,6 +38,11 @@ build:          ## Compila a dist/
 
 datos:          ## Descarga los JSON de la etiqueta del paquete PHP (ver package.json)
 	$(RUN) npm run datos
+
+# Solo para la primera versión: las siguientes las publica el CI al crear un
+# release. El login vive dentro del contenedor y se pierde al salir.
+publicar:       ## Publica en npm a mano, con login y 2FA
+	$(RUN) sh -c 'export HOME=/tmp && npm ci && npm test && npm login && npm publish --access public'
 
 npm: | $(CACHE) ## make npm c="outdated"
 	$(RUN) npm $(c)
