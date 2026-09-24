@@ -1,0 +1,19 @@
+{
+  "catalogo": "14",
+  "nombre": "Código de otros conceptos tributarios",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "1000": {"descripcion":"Total valor de venta - operaciones exportadas"},
+    "1001": {"descripcion":"Total valor de venta - operaciones gravadas"},
+    "1002": {"descripcion":"Total valor de venta - operaciones inafectas"},
+    "1003": {"descripcion":"Total valor de venta - operaciones exoneradas"},
+    "1004": {"descripcion":"Total valor de venta – Operaciones gratuitas"},
+    "1005": {"descripcion":"Sub total de venta"},
+    "2001": {"descripcion":"Percepciones"},
+    "2002": {"descripcion":"Retenciones"},
+    "2003": {"descripcion":"Detracciones"},
+    "2004": {"descripcion":"Bonificaciones"},
+    "2005": {"descripcion":"Total descuentos"},
+    "3001": {"descripcion":"FISE (Ley 29852) Fondo Inclusión Social Energético"}
+  }
+}

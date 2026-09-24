@@ -1,0 +1,20 @@
+{
+  "catalogo": "06",
+  "nombre": "Código de tipo de documento de identidad",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "0": {"descripcion":"DOC.TRIB.NO.DOM.SIN.RUC"},
+    "1": {"descripcion":"Documento Nacional de Identidad"},
+    "4": {"descripcion":"Carnet de extranjería"},
+    "6": {"descripcion":"Registro Unico de Contribuyentes"},
+    "7": {"descripcion":"Pasaporte"},
+    "A": {"descripcion":"Cédula Diplomática de identidad"},
+    "B": {"descripcion":"DOC.IDENT.PAIS.RESIDENCIA-NO.D"},
+    "C": {"descripcion":"Tax Identification Number - TIN – Doc Trib PP.NN"},
+    "D": {"descripcion":"Identification Number - IN – Doc Trib PP. JJ"},
+    "E": {"descripcion":"TAM- Tarjeta Andina de Migración"},
+    "F": {"descripcion":"Permiso Temporal de Permanencia - PTP"},
+    "G": {"descripcion":"Salvoconducto"},
+    "H": {"descripcion":"Carné Permiso Temp.Perman. - CPP"}
+  }
+}

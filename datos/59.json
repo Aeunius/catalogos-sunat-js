@@ -1,0 +1,29 @@
+{
+  "catalogo": "59",
+  "nombre": "Medios de Pago",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "001": {"descripcion":"Depósito en cuenta"},
+    "002": {"descripcion":"Giro"},
+    "003": {"descripcion":"Transferencia de fondos"},
+    "004": {"descripcion":"Orden de pago"},
+    "005": {"descripcion":"Tarjeta de débito"},
+    "006": {"descripcion":"Tarjeta de crédito emitida en el país por una empresa del sistema financiero"},
+    "007": {"descripcion":"Cheques con la cláusula de \"NO NEGOCIABLE\", \"INTRANSFERIBLES\", \"NO A LA ORDEN\" u otra equivalente, a que se refiere el inciso g) del artículo 5° de la ley"},
+    "008": {"descripcion":"Efectivo, por operaciones en las que no existe obligación de utilizar medio de pago"},
+    "009": {"descripcion":"Efectivo, en los demás casos"},
+    "010": {"descripcion":"Medios de pago usados en comercio exterior"},
+    "011": {"descripcion":"Documentos emitidos por las EDPYMES y las cooperativas de ahorro y crédito no autorizadas a captar depósitos del público"},
+    "012": {"descripcion":"Tarjeta de crédito emitida en el país o en el exterior por una empresa no perteneciente al sistema financiero, cuyo objeto principal sea la emisión y administración de tarjetas de crédito"},
+    "013": {"descripcion":"Tarjetas de crédito emitidas en el exterior por empresas bancarias o financieras no domiciliadas"},
+    "101": {"descripcion":"Transferencias – Comercio exterior"},
+    "102": {"descripcion":"Cheques bancarios - Comercio exterior"},
+    "103": {"descripcion":"Orden de pago simple - Comercio exterior"},
+    "104": {"descripcion":"Orden de pago documentario - Comercio exterior"},
+    "105": {"descripcion":"Remesa simple - Comercio exterior"},
+    "106": {"descripcion":"Remesa documentaria - Comercio exterior"},
+    "107": {"descripcion":"Carta de crédito simple - Comercio exterior"},
+    "108": {"descripcion":"Carta de crédito documentario - Comercio exterior"},
+    "999": {"descripcion":"Otros medios de pago"}
+  }
+}

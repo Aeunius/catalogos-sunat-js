@@ -1,0 +1,29 @@
+{
+  "catalogo": "53",
+  "nombre": "Códigos de cargos, descuentos y otras deducciones",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "00": {"descripcion":"Descuentos que afectan la base imponible del IGV/IVAP","nivel":"item"},
+    "01": {"descripcion":"Descuentos que no afectan la base imponible del IGV/IVAP","nivel":"item"},
+    "02": {"descripcion":"Descuentos globales que afectan la base imponible del IGV/IVAP","nivel":"global"},
+    "03": {"descripcion":"Descuentos globales que no afectan la base imponible del IGV/IVAP","nivel":"global"},
+    "04": {"descripcion":"Descuentos globales por anticipos gravados que afectan la base imponible del IGV/IVAP","nivel":"global"},
+    "05": {"descripcion":"Descuentos globales por anticipos exonerados","nivel":"global"},
+    "06": {"descripcion":"Descuentos globales por anticipos inafectos","nivel":"global"},
+    "07": {"descripcion":"Factor de compensación - Decreto de urgencia N. 010-2004","nivel":"item"},
+    "20": {"descripcion":"Anticipo de ISC","nivel":"global"},
+    "45": {"descripcion":"FISE","nivel":"global"},
+    "46": {"descripcion":"Recargo al consumo y/o propinas","nivel":"global"},
+    "47": {"descripcion":"Cargos que afectan la base imponible del IGV/IVAP","nivel":"item"},
+    "48": {"descripcion":"Cargos que no afectan la base imponible del IGV/IVAP","nivel":"item"},
+    "49": {"descripcion":"Cargos globales que afectan la base imponible del IGV/IVAP","nivel":"global"},
+    "50": {"descripcion":"Cargos globales que no afectan la base imponible del IGV/IVAP","nivel":"global"},
+    "51": {"descripcion":"Percepción venta interna","nivel":"global"},
+    "52": {"descripcion":"Percepción a la adquisición de combustible","nivel":"global"},
+    "53": {"descripcion":"Percepción realizada al agente de percepción con tasa especial","nivel":"global"},
+    "54": {"descripcion":"Factor de aportación - Decreto de urgencia N. 010-2004","nivel":"item"},
+    "61": {"descripcion":"Retención de renta por anticipos","nivel":"global"},
+    "62": {"descripcion":"Retención del IGV","nivel":"global"},
+    "63": {"descripcion":"Retención de renta de segunda categoría","nivel":"global"}
+  }
+}

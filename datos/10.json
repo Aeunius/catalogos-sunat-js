@@ -1,0 +1,12 @@
+{
+  "catalogo": "10",
+  "nombre": "Códigos de tipo de nota de débito electrónica",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Intereses por mora"},
+    "02": {"descripcion":"Aumento en el valor"},
+    "03": {"descripcion":"Penalidades/ otros conceptos"},
+    "11": {"descripcion":"Ajustes de operaciones de exportación"},
+    "12": {"descripcion":"Ajustes afectos al IVAP"}
+  }
+}

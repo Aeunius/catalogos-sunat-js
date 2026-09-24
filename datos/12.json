@@ -1,0 +1,18 @@
+{
+  "catalogo": "12",
+  "nombre": "Código de documentos relacionados tributarios",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Factura – emitida para corregir error en el RUC"},
+    "02": {"descripcion":"Factura – emitida por anticipos"},
+    "03": {"descripcion":"Boleta de Venta – emitida por anticipos"},
+    "04": {"descripcion":"Ticket de Salida - ENAPU"},
+    "05": {"descripcion":"Código SCOP"},
+    "06": {"descripcion":"Factura electrónica remitente"},
+    "07": {"descripcion":"Guia de remisión remitente"},
+    "08": {"descripcion":"Declaración de salida del depósito franco"},
+    "09": {"descripcion":"Declaración simplificada de importación"},
+    "10": {"descripcion":"Liquidación de compra - emitida por anticipos"},
+    "99": {"descripcion":"Otros"}
+  }
+}

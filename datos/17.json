@@ -1,0 +1,27 @@
+{
+  "catalogo": "17",
+  "nombre": "Código de tipo de operación",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Venta Interna"},
+    "02": {"descripcion":"Exportación de bienes"},
+    "03": {"descripcion":"No Domiciliados"},
+    "04": {"descripcion":"Venta Interna – Anticipos"},
+    "05": {"descripcion":"Venta Itinerante"},
+    "06": {"descripcion":"Factura Guía"},
+    "07": {"descripcion":"Venta Arroz Pilado"},
+    "08": {"descripcion":"Factura - Comprobante de Percepción"},
+    "10": {"descripcion":"Factura - Guía remitente"},
+    "11": {"descripcion":"Factura - Guía transportista"},
+    "12": {"descripcion":"Boleta de venta – Comprobante de Percepción."},
+    "13": {"descripcion":"Gasto Deducible Persona Natural"},
+    "14": {"descripcion":"Exportación de servicios – prestación de servicios de hospedaje No Dom"},
+    "15": {"descripcion":"Exportación de servicios – Transporte de navieras"},
+    "16": {"descripcion":"Exportación de servicios – servicios a naves y aeronaves de bandera extranjera"},
+    "17": {"descripcion":"Exportación de servicios – RES"},
+    "18": {"descripcion":"Exportación de servicios - Servicios que conformen un Paquete Turístico"},
+    "19": {"descripcion":"Exportación de servicios – Servicios complementarios al transporte de carga"},
+    "20": {"descripcion":"Exportación de servicios – Suministro de energía eléctrica a favor de sujetos domiciliados en ZED"},
+    "21": {"descripcion":"Exportación de servicios – Prestación servicios realizados parcialmente en el extranjero"}
+  }
+}

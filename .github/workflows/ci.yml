@@ -1,0 +1,75 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['22', '24', '26']
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+      # El paquete como lo ve quien lo instala: por su nombre y con los exports
+      # de package.json, en ESM y con require().
+      - name: Probar el paquete compilado
+        run: |
+          node --input-type=module -e "
+            import { descripcion } from '@aeunius/catalogos-sunat'
+            import { cargar } from '@aeunius/catalogos-sunat/cargar'
+            import monedas from '@aeunius/catalogos-sunat/catalogos/02'
+            if (descripcion(monedas, 'PEN') !== 'sol peruano') process.exit(1)
+            if (descripcion(await cargar('25'), '10101502') !== 'Perros') process.exit(1)
+          "
+          node -e "
+            const { descripcion } = require('@aeunius/catalogos-sunat')
+            const identidad = require('@aeunius/catalogos-sunat/catalogos/06').default
+            if (descripcion(identidad, '6') !== 'Registro Unico de Contribuyentes') process.exit(1)
+          "
+
+  estatico:
+    name: Tipos y lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npx biome ci
+
+  datos:
+    name: Datos de la etiqueta del paquete PHP
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      # Que datos/ sea exactamente lo que hay en la etiqueta de package.json.
+      - run: npm run datos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: git diff --exit-code --stat datos/ && test -z "$(git status --porcelain datos/)"

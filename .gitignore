@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+# Los genera scripts/generar.mjs desde datos/.
+/src/catalogos/
+/src/codigos.ts
+/src/cargar.ts
+.idea/
+.vscode/

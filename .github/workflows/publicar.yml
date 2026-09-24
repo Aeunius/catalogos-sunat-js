@@ -1,0 +1,36 @@
+name: publicar
+
+# Publica en npm al subir una etiqueta vX.Y.Z, con provenance: npm muestra que
+# el paquete se construyó aquí, desde ese commit.
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    environment: npm
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          cache: npm
+
+      - name: La etiqueta coincide con package.json
+        run: test "${GITHUB_REF_NAME}" = "v$(node -p "require('./package.json').version")"
+
+      - run: npm ci
+      - run: npm test
+
+      # Con trusted publishing configurado en npm no hace falta NPM_TOKEN.
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,11 @@
+{
+  "catalogo": "27",
+  "nombre": "Indicador de primera vivienda",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "0": {"descripcion":"Sin indicador"},
+    "1": {"descripcion":"Calificado para crédito Mi Vivienda / Techo Propio"},
+    "2": {"descripcion":"Libre disposición de la AFP"},
+    "3": {"descripcion":"Calificado como primera vivienda de acuerdo a la información proporcionada por el cliente (para créditos otorgados a partir del 01.01.2013)"}
+  }
+}

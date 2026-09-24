@@ -1,0 +1,67 @@
+{
+  "name": "@aeunius/catalogos-sunat",
+  "version": "1.0.0",
+  "description": "Catálogos de la SUNAT (Anexo N.° 8) para el navegador y Node: monedas, tipos de documento, afectación del IGV, ubigeo y el resto, con tipos.",
+  "keywords": [
+    "sunat",
+    "peru",
+    "catalogos",
+    "facturacion-electronica",
+    "ubigeo",
+    "cpe"
+  ],
+  "homepage": "https://github.com/Aeunius/catalogos-sunat-js#readme",
+  "bugs": "https://github.com/Aeunius/catalogos-sunat-js/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aeunius/catalogos-sunat-js.git"
+  },
+  "license": "MIT",
+  "author": "Alejandro Gonzales Sarmiento",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./cargar": {
+      "types": "./dist/cargar.d.ts",
+      "default": "./dist/cargar.js"
+    },
+    "./catalogos/*": {
+      "types": "./dist/catalogos/*.d.ts",
+      "default": "./dist/catalogos/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "config": {
+    "datos": "v1.0.0"
+  },
+  "scripts": {
+    "datos": "node scripts/datos.mjs",
+    "generar": "node scripts/generar.mjs",
+    "pretest": "npm run generar",
+    "test": "vitest run",
+    "pretypecheck": "npm run generar",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check",
+    "format": "biome check --write",
+    "prebuild": "npm run generar",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@types/node": "^26.6.2",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  }
+}

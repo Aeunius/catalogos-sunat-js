@@ -1,0 +1,19 @@
+{
+  "catalogo": "D-37",
+  "nombre": "Entidades que emiten autorizaciones especiales para el traslado",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Superintendencia Nacional de Control de Servicios de Seguridad, Armas, Municiones y Explosivos de Uso Civil","abreviatura":"SUCAMEC"},
+    "02": {"descripcion":"Dirección General de Medicamentos Insumos y Drogas","abreviatura":"DIGEMID"},
+    "03": {"descripcion":"Dirección General de Salud Ambiental","abreviatura":"DIGESA"},
+    "04": {"descripcion":"Servicio Nacional de Sanidad Agraria","abreviatura":"SENASA"},
+    "05": {"descripcion":"Servicio Nacional Forestal y de Fauna Silvestre","abreviatura":"SERFOR"},
+    "06": {"descripcion":"Ministerio de Transportes y Comunicaciones","abreviatura":"MTC"},
+    "07": {"descripcion":"Ministerio de la Producción","abreviatura":"PRODUCE"},
+    "08": {"descripcion":"Ministerio del Ambiente","abreviatura":"MIN. AMBIENTE"},
+    "09": {"descripcion":"Organismo Nacional de Sanidad Pesquera","abreviatura":"SANIPES"},
+    "10": {"descripcion":"Municipalidad Metropolitana de Lima","abreviatura":"MML"},
+    "11": {"descripcion":"Ministerio de Salud","abreviatura":"MINSA"},
+    "12": {"descripcion":"Gobierno Regional","abreviatura":"GR"}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "catalogo": "23",
+  "nombre": "Código de regimen de retenciones",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Tasa 3%","porcentaje":3},
+    "02": {"descripcion":"Tasa 6%","porcentaje":6}
+  }
+}

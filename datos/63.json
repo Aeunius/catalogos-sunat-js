@@ -1,0 +1,28 @@
+{
+  "catalogo": "63",
+  "nombre": "Puertos del Perú",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "CHM": {"descripcion":"Chimbote","ubigeo":"021801"},
+    "CHY": {"descripcion":"Chancay","ubigeo":"150605"},
+    "CLL": {"descripcion":"Callao","ubigeo":"070101"},
+    "CON": {"descripcion":"Conchán","ubigeo":"150119"},
+    "EEN": {"descripcion":"Eten","ubigeo":"140113"},
+    "HCO": {"descripcion":"Huacho","ubigeo":"150801"},
+    "HUY": {"descripcion":"Huarmey","ubigeo":"021101"},
+    "ILQ": {"descripcion":"Ilo","ubigeo":"180301"},
+    "IQT": {"descripcion":"Iquitos","ubigeo":"160101"},
+    "MRI": {"descripcion":"Matarani","ubigeo":"040701"},
+    "PAI": {"descripcion":"Paita","ubigeo":"200501"},
+    "PCL": {"descripcion":"Pucallpa","ubigeo":"250101"},
+    "PIO": {"descripcion":"Pisco","ubigeo":"110505"},
+    "PUB": {"descripcion":"Bayóvar","ubigeo":"200801"},
+    "PUN": {"descripcion":"Puno","ubigeo":"210101"},
+    "SNX": {"descripcion":"San Nicolas","ubigeo":"110304"},
+    "SUP": {"descripcion":"Supe","ubigeo":"150204"},
+    "SVY": {"descripcion":"Salaverry","ubigeo":"130109"},
+    "TYL": {"descripcion":"Talara","ubigeo":"200701"},
+    "YMS": {"descripcion":"Yurimaguas","ubigeo":"160201"},
+    "ZOR": {"descripcion":"Zorritos","ubigeo":"240103"}
+  }
+}

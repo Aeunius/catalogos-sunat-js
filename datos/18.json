@@ -1,0 +1,9 @@
+{
+  "catalogo": "18",
+  "nombre": "Código de modalidad de transporte",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Transporte público"},
+    "02": {"descripcion":"Transporte privado"}
+  }
+}

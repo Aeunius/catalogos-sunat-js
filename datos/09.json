@@ -1,0 +1,20 @@
+{
+  "catalogo": "09",
+  "nombre": "Códigos de tipo de nota de crédito electrónica",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Anulación de la operación"},
+    "02": {"descripcion":"Anulación por error en el RUC"},
+    "03": {"descripcion":"Corrección por error en la descripción o atención de reclamo respecto de bienes adquiridos o servicios prestados"},
+    "04": {"descripcion":"Descuento global"},
+    "05": {"descripcion":"Descuento por ítem"},
+    "06": {"descripcion":"Devolución total"},
+    "07": {"descripcion":"Devolución por ítem"},
+    "08": {"descripcion":"Bonificación"},
+    "09": {"descripcion":"Disminución en el valor"},
+    "10": {"descripcion":"Otros Conceptos"},
+    "11": {"descripcion":"Ajustes de operaciones de exportación"},
+    "12": {"descripcion":"Ajustes afectos al IVAP"},
+    "13": {"descripcion":"Corrección o modificación del monto neto pendiente de pago y/o la(s) fechas(s) de vencimiento del pago único o de las cuotas y/o los montos correspondientes a cada cuota, de ser el caso"}
+  }
+}

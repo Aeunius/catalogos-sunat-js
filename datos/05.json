@@ -1,0 +1,17 @@
+{
+  "catalogo": "05",
+  "nombre": "Código de tipos de tributos y otros conceptos",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "1000": {"descripcion":"IGV Impuesto General a las Ventas","codigo_internacional":"VAT","nombre":"IGV"},
+    "1016": {"descripcion":"Impuesto a la Venta Arroz Pilado","codigo_internacional":"VAT","nombre":"IVAP"},
+    "2000": {"descripcion":"ISC Impuesto Selectivo al Consumo","codigo_internacional":"EXC","nombre":"ISC"},
+    "3000": {"descripcion":"Impuesto a la Renta","codigo_internacional":"TOX","nombre":"IR"},
+    "7152": {"descripcion":"Impuesto a la bolsa plastica","codigo_internacional":"OTH","nombre":"ICBPER"},
+    "9995": {"descripcion":"Exportación","codigo_internacional":"FRE","nombre":"EXP"},
+    "9996": {"descripcion":"Gratuito","codigo_internacional":"FRE","nombre":"GRA"},
+    "9997": {"descripcion":"Exonerado","codigo_internacional":"VAT","nombre":"EXO"},
+    "9998": {"descripcion":"Inafecto","codigo_internacional":"FRE","nombre":"INA"},
+    "9999": {"descripcion":"Otros tributos","codigo_internacional":"OTH","nombre":"OTROS"}
+  }
+}

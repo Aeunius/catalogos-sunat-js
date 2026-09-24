@@ -1,0 +1,21 @@
+{
+  "catalogo": "20",
+  "nombre": "Código de motivo de traslado",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Venta"},
+    "02": {"descripcion":"Compra"},
+    "03": {"descripcion":"Venta con entrega a terceros"},
+    "04": {"descripcion":"Traslado entre establecimientos de la misma empresa"},
+    "05": {"descripcion":"Consignación"},
+    "06": {"descripcion":"Devolución"},
+    "07": {"descripcion":"Recojo de bienes transformados"},
+    "08": {"descripcion":"Importación"},
+    "09": {"descripcion":"Exportación"},
+    "13": {"descripcion":"Otros"},
+    "14": {"descripcion":"Venta sujeta a confirmación del comprador"},
+    "17": {"descripcion":"Traslado de bienes para transformación"},
+    "18": {"descripcion":"Traslado emisor itinerante CP"},
+    "19": {"descripcion":"Traslado de mercancía extranjera"}
+  }
+}

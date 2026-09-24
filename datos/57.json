@@ -1,0 +1,11 @@
+{
+  "catalogo": "57",
+  "nombre": "Código de tipo de servicio públicos - telecomunicaciones",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "1": {"descripcion":"Servicios Portadores"},
+    "2": {"descripcion":"Teleservicios o Servicios Finales"},
+    "3": {"descripcion":"Servicios de Difusión"},
+    "4": {"descripcion":"Servicios de valor añadido"}
+  }
+}

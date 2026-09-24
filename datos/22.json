@@ -1,0 +1,10 @@
+{
+  "catalogo": "22",
+  "nombre": "Código de regimen de percepciones",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "01": {"descripcion":"Percepción Venta Interna","porcentaje":2},
+    "02": {"descripcion":"Percepción a la adquisición de combustible","porcentaje":1},
+    "03": {"descripcion":"Percepción realizada al agente de percepción con tasa especial","porcentaje":0.5}
+  }
+}

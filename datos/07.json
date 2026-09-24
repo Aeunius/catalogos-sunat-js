@@ -1,0 +1,26 @@
+{
+  "catalogo": "07",
+  "nombre": "Código de tipo de afectación del IGV",
+  "fuente": "SUNAT, reglas de validación CPE y GRE del 21-04-2025 (hoja Catálogos)",
+  "items": {
+    "10": {"descripcion":"Gravado - Operación Onerosa","tributos":["1000"]},
+    "11": {"descripcion":"Gravado – Retiro por premio","tributos":["9996"]},
+    "12": {"descripcion":"Gravado – Retiro por donación","tributos":["9996"]},
+    "13": {"descripcion":"Gravado – Retiro","tributos":["9996"]},
+    "14": {"descripcion":"Gravado – Retiro por publicidad","tributos":["9996"]},
+    "15": {"descripcion":"Gravado – Bonificaciones","tributos":["9996"]},
+    "16": {"descripcion":"Gravado – Retiro por entrega a trabajadores","tributos":["9996"]},
+    "17": {"descripcion":"Gravado - IVAP","tributos":["1016","9996"]},
+    "20": {"descripcion":"Exonerado - Operación Onerosa","tributos":["9997"]},
+    "21": {"descripcion":"Exonerado - Transferencia gratuita","tributos":["9996"]},
+    "30": {"descripcion":"Inafecto - Operación Onerosa","tributos":["9998"]},
+    "31": {"descripcion":"Inafecto – Retiro por Bonificación","tributos":["9996"]},
+    "32": {"descripcion":"Inafecto – Retiro","tributos":["9996"]},
+    "33": {"descripcion":"Inafecto – Retiro por Muestras Médicas","tributos":["9996"]},
+    "34": {"descripcion":"Inafecto - Retiro por Convenio Colectivo","tributos":["9996"]},
+    "35": {"descripcion":"Inafecto – Retiro por premio","tributos":["9996"]},
+    "36": {"descripcion":"Inafecto - Retiro por publicidad","tributos":["9996"]},
+    "37": {"descripcion":"Inafecto - Transferencia gratuita","tributos":["9996"]},
+    "40": {"descripcion":"Exportación de Bienes o Servicios","tributos":["9995","9996"]}
+  }
+}
